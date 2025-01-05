@@ -14,6 +14,8 @@ COLLATE utf8mb4_unicode_ci;
 
 USE Toko_Pulsa;
 ```
+![Screenshot 2025-01-05 214041](https://github.com/user-attachments/assets/f79688ee-d705-4193-bfdc-cb01470db5f4)
+
 
 2. Membuat Tabel Pembeli yang membuat NoTelp_Pembeli sebagai Primary key.
 ```sql
