@@ -16,24 +16,7 @@ USE Toko_Pulsa;
 ```
 ![Screenshot 2025-01-05 214041](https://github.com/user-attachments/assets/f79688ee-d705-4193-bfdc-cb01470db5f4)
 
-
-2. Membuat Tabel Pembeli yang membuat NoTelp_Pembeli sebagai Primary key.
-```sql
-CREATE TABLE Pembeli (
-    NoTelp_Pembeli BIGINT(20) PRIMARY KEY,
-    Nama_Pembeli VARCHAR(100),
-    Jumlah BIGINT(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_unicode_ci;
-```
-4. Membuat Tabel Penjual yang memuat ID_Penjual sebagai Primary Key.
-```sql
-CREATE TABLE Penjual (
-    ID_Penjual INT AUTO_INCREMENT PRIMARY KEY,
-    Nama_Penjual VARCHAR(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_unicode_ci;
-```
-
-5. Membuat Tabel Barang yang memuat ID_Barang sebagai Primary Key.
+2. Membuat Tabel Barang yang memuat ID_Barang sebagai Primary Key.
 ```sql
 CREATE TABLE Barang (
     ID_Barang INT AUTO_INCREMENT PRIMARY KEY,
@@ -41,8 +24,28 @@ CREATE TABLE Barang (
     Harga_Barang BIGINT(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
+![Screenshot 2024-12-31 103830](https://github.com/user-attachments/assets/b0244f51-fbcd-4869-9a0c-8362f1261c3b)
 
-6. Membuat Tabel Transaksi yang memuat ID_Transaksi sebagai Primary Key, dan memiliki beberapa Foriegn Key yaitu (NoTelp_Pembeli dari tabel Pembeli, ID_Penjual dari tabel penjual dan, ID_Barang dari tabel barang)
+3. Membuat Tabel Penjual yang memuat ID_Penjual sebagai Primary Key.
+```sql
+CREATE TABLE Penjual (
+    ID_Penjual INT AUTO_INCREMENT PRIMARY KEY,
+    Nama_Penjual VARCHAR(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+![Screenshot 2024-12-31 104309](https://github.com/user-attachments/assets/f4ccddcc-5872-42f0-8a23-688eba58254b)
+
+4. Membuat Tabel Pembeli yang membuat NoTelp_Pembeli sebagai Primary key.
+```sql
+CREATE TABLE Pembeli (
+    NoTelp_Pembeli BIGINT(20) PRIMARY KEY,
+    Nama_Pembeli VARCHAR(100),
+    Jumlah BIGINT(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+![Screenshot 2025-01-05 214902](https://github.com/user-attachments/assets/7f14902e-c0bc-4bc7-9366-0ccbbc752968)
+
+5. Membuat Tabel Transaksi yang memuat ID_Transaksi sebagai Primary Key, dan memiliki beberapa Foriegn Key yaitu (NoTelp_Pembeli dari tabel Pembeli, ID_Penjual dari tabel penjual dan, ID_Barang dari tabel barang)
 ```sql
 CREATE TABLE Transaksi (
     ID_Transaksi INT AUTO_INCREMENT PRIMARY KEY,
@@ -57,6 +60,7 @@ CREATE TABLE Transaksi (
     Total_Bayar BIGINT(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
+![Screenshot 2024-12-31 112353](https://github.com/user-attachments/assets/9c1d81d2-1862-4832-88f3-d6efd99a5824)
 
 
 
