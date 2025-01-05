@@ -148,31 +148,37 @@ INSERT INTO pembeli (NoTelp_Pembeli, Nama_Pembeli, Jumlah) VALUES
 INSERT INTO transaksi (Tanggal_Transaksi, ID_Barang, ID_Penjual, NoTelp_Pembeli, Status_Transaksi, Total_Bayar) VALUES
 (CURRENT_TIMESTAMP(), 4, 1, 6281382221356, 'Berhasil', 32000),
 (CURRENT_TIMESTAMP(), 17, 1, 6281735592882, 'Berhasil', 12000);
-
+```
+```sql
 INSERT INTO transaksi (Tanggal_Transaksi, ID_Barang, ID_Penjual, NoTelp_Pembeli, Status_Transaksi, Total_Bayar) VALUES
 (CURRENT_TIMESTAMP(), 4, 2, 6282724050662, 'Gagal', 32000),
 (CURRENT_TIMESTAMP(), 3, 2, 6282878907512, 'Berhasil', 22000);
-
+```
+```sql
 INSERT INTO transaksi (Tanggal_Transaksi, ID_Barang, ID_Penjual, NoTelp_Pembeli, Status_Transaksi, Total_Bayar) VALUES
 (CURRENT_TIMESTAMP(), 17, 3, 6283357332189, 'Berhasil', 12000),
 (CURRENT_TIMESTAMP(), 18, 3, 6283579023422, 'Berhasil', 22000);
-
+```
+```sql
 INSERT INTO transaksi (Tanggal_Transaksi, ID_Barang, ID_Penjual, NoTelp_Pembeli, Status_Transaksi, Total_Bayar) VALUES
 (CURRENT_TIMESTAMP(), 9, 3, 6285259877688, 'Berhasil', 32000),
 (CURRENT_TIMESTAMP(), 8, 3, 6285710750840, 'Berhasil', 22000),
 (CURRENT_TIMESTAMP(), 6, 3, 6285743675445, 'Berhasil', 7000);
-
+```
+```sql
 INSERT INTO transaksi (Tanggal_Transaksi, ID_Barang, ID_Penjual, NoTelp_Pembeli, Status_Transaksi, Total_Bayar) VALUES
 (CURRENT_TIMESTAMP(), 8, 4, 6285766246376, 'Berhasil', 22000),
 (CURRENT_TIMESTAMP(), 10, 4, 6285782277592, 'Berhasil', 52000),
 (CURRENT_TIMESTAMP(), 7, 4, 6285813520402, 'Gagal', 12000),
 (CURRENT_TIMESTAMP(), 7, 4, 6285899862153, 'Berhasil', 12000);
-
+```
+```sql
 INSERT INTO transaksi (Tanggal_Transaksi, ID_Barang, ID_Penjual, NoTelp_Pembeli, Status_Transaksi, Total_Bayar) VALUES
 (CURRENT_TIMESTAMP(), 10, 6, 6286692675902, 'Berhasil', 52000),
 (CURRENT_TIMESTAMP(), 12, 6, 6289509099421, 'Gagal', 12000),
 (CURRENT_TIMESTAMP(), 11, 7, 6289562997231, 'Berhasil', 7000);
-
+```
+```sql
 INSERT INTO transaksi (Tanggal_Transaksi, ID_Barang, ID_Penjual, NoTelp_Pembeli, Status_Transaksi, Total_Bayar) VALUES
 (CURRENT_TIMESTAMP(), 18, 7, 6483818206034, 'Berhasil', 22000),
 (CURRENT_TIMESTAMP(), 11, 10, 62895403278340, 'Berhasil', 7000),
@@ -182,7 +188,7 @@ INSERT INTO transaksi (Tanggal_Transaksi, ID_Barang, ID_Penjual, NoTelp_Pembeli,
 ![Screenshot 2024-12-31 185131](https://github.com/user-attachments/assets/1a8ea19b-164f-4c9b-b8d4-1ad98b2118c0)
 ![Screenshot 2024-12-31 185141](https://github.com/user-attachments/assets/b0648b3c-8496-40b4-978c-7388f887680e)
 
-
+10. 
 
 
 
