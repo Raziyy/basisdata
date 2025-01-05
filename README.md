@@ -1,6 +1,6 @@
 # Tugas Akhir Basis Data 
 Disusun Oleh Kelompok 9 :
-1. Fazril Fadhilah   - 4523210
+1. Fazril Fadhilah   - 4523210047
 2. Muhammad Al Fatih - 4523210135
 3. Raziy Ibrahim     - 4523210138
 
