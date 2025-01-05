@@ -188,7 +188,22 @@ INSERT INTO transaksi (Tanggal_Transaksi, ID_Barang, ID_Penjual, NoTelp_Pembeli,
 ![Screenshot 2024-12-31 185131](https://github.com/user-attachments/assets/1a8ea19b-164f-4c9b-b8d4-1ad98b2118c0)
 ![Screenshot 2024-12-31 185141](https://github.com/user-attachments/assets/b0648b3c-8496-40b4-978c-7388f887680e)
 
-10. 
+10. Delete query
+```sql
+DELETE FROM `transaksi` WHERE ID_Transaksi = 40;
+```
+![Screenshot 2024-12-31 190229](https://github.com/user-attachments/assets/88560435-5699-4373-8955-b0d6cfda8eff)
+
+
+11. Update query
+```sql
+UPDATE pembeli
+SET NoTelp_Pembeli = 6283818206034
+WHERE Nama_Pembeli = ‘Rose’;
+```
+![Screenshot 2025-01-05 194739](https://github.com/user-attachments/assets/821f663b-32fe-47b2-a38f-2ec93abc71ca)
+
+12. Tiga user yang dapat mengakses database (fatih, raziy, fazril)
 
 
 
