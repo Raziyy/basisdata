@@ -62,7 +62,7 @@ CREATE TABLE Transaksi (
 ```
 ![Screenshot 2024-12-31 112353](https://github.com/user-attachments/assets/9c1d81d2-1862-4832-88f3-d6efd99a5824)
 
-6. Menginput 20 data dummy ke tabel barang
+6. Menginput 20 data dummy ke tabel barang.
 ```sql
 INSERT INTO barang (Nama_Barang, Harga_Barang) VALUES
 ('Telkomsel 5000', 5700),
@@ -89,7 +89,7 @@ INSERT INTO barang (Nama_Barang, Harga_Barang) VALUES
 ![Screenshot 2024-12-31 173427](https://github.com/user-attachments/assets/8a44f144-2022-4479-b514-3b1b18b32198)
 ![Screenshot 2024-12-31 173443](https://github.com/user-attachments/assets/2b9a7c21-237f-43b9-87f2-79ec429e6b1a)
 
-7. Menginput 20 data dummy ke tabel penjual
+7. Menginput 20 data dummy ke tabel penjual.
 ```sql
 INSERT INTO penjual (Nama_Penjual) VALUES
 ('Al Fatih'),
@@ -116,7 +116,7 @@ INSERT INTO penjual (Nama_Penjual) VALUES
 ![Screenshot 2024-12-31 173503](https://github.com/user-attachments/assets/575efc94-25bb-4f52-a0bd-3aa956e22f3b)
 ![Screenshot 2024-12-31 173512](https://github.com/user-attachments/assets/541a277a-bfa8-4c45-b7c4-53cc058f4602)
 
-8. Menginput 20 data dummy ke tabel pembeli
+8. Menginput 20 data dummy ke tabel pembeli.
 ```sql
 INSERT INTO pembeli (NoTelp_Pembeli, Nama_Pembeli, Jumlah) VALUES
 (62895403278340, 'Andini', 5000),
@@ -143,7 +143,7 @@ INSERT INTO pembeli (NoTelp_Pembeli, Nama_Pembeli, Jumlah) VALUES
 ![Screenshot 2024-12-31 173330](https://github.com/user-attachments/assets/15b0931d-830b-4096-a446-50fc012081d8)
 ![Screenshot 2024-12-31 173341](https://github.com/user-attachments/assets/5ea7022d-586c-498e-91c9-db1e25701eac)
 
-9. Menginput 20 data dummy ke tabel transaksi
+9. Menginput 20 data dummy ke tabel transaksi.
 ```sql
 INSERT INTO transaksi (Tanggal_Transaksi, ID_Barang, ID_Penjual, NoTelp_Pembeli, Status_Transaksi, Total_Bayar) VALUES
 (CURRENT_TIMESTAMP(), 4, 1, 6281382221356, 'Berhasil', 32000),
@@ -188,14 +188,14 @@ INSERT INTO transaksi (Tanggal_Transaksi, ID_Barang, ID_Penjual, NoTelp_Pembeli,
 ![Screenshot 2024-12-31 185131](https://github.com/user-attachments/assets/1a8ea19b-164f-4c9b-b8d4-1ad98b2118c0)
 ![Screenshot 2024-12-31 185141](https://github.com/user-attachments/assets/b0648b3c-8496-40b4-978c-7388f887680e)
 
-10. Delete query
+10. Menghapus data dari tabel transaksi dimana ID_Transaksi = 40.
 ```sql
 DELETE FROM `transaksi` WHERE ID_Transaksi = 40;
 ```
 ![Screenshot 2024-12-31 190229](https://github.com/user-attachments/assets/88560435-5699-4373-8955-b0d6cfda8eff)
 
 
-11. Update query
+11. Mengedit data NoTelp_Pembeli pada tabel pembeli dimana Nama_Pembeli = Rose.
 ```sql
 UPDATE pembeli
 SET NoTelp_Pembeli = 6283818206034
@@ -203,27 +203,38 @@ WHERE Nama_Pembeli = ‘Rose’;
 ```
 ![Screenshot 2025-01-05 194739](https://github.com/user-attachments/assets/821f663b-32fe-47b2-a38f-2ec93abc71ca)
 
-12. Tiga user yang dapat mengakses database (fatih, raziy, fazril)
+12. Membuat pengguna bernama raziy yang dapat mengakses database dari localhost dengan kata sandi raziy123.
 ```sql
 CREATE USER `raziy`@`localhost`
 IDENTIFIED BY ‘raziy123’;
 ```
 ![Screenshot 2025-01-03 165512](https://github.com/user-attachments/assets/89ef0bd4-3c8c-45ed-bb4e-9f6ea9a4ce29)
 
+13. Membuat pengguna bernama fatih yang dapat mengakses database dari localhost dengan kata sandi fatih123.
 ```sql
 CREATE USER `fatih`@`localhost`
 IDENTIFIED BY ‘fatih123’;
 ```
 ![Screenshot 2025-01-03 165725](https://github.com/user-attachments/assets/a2b5b29d-5470-402c-a27e-4bbe166f098e)
 
+14. Membuat pengguna bernama fazril yang dapat mengakses database dari localhost dengan kata sandi fazril123.
 ```sql
 CREATE USER `fazril`@`localhost`
 IDENTIFIED BY ‘fazril123’;
 ```
 ![Screenshot 2025-01-03 165821](https://github.com/user-attachments/assets/6fdd2dcb-b8ea-4c11-b2d5-a6eecbdfd6fa)
 
+13. Raziy dapat hak akses berupa delete, insert, dan update ke database toko_pulsa.
+```sql
+GRANT DELETE, INSERT, UPDATE ON toko_pulsa. * TO `raziy`@`localhost` IDENTIFIED BY ‘raziy123’;
+```
+![Screenshot 2025-01-03 174448](https://github.com/user-attachments/assets/cc373f79-ead3-46b1-8ff5-926fd2c7aa6b)
 
-
+14. Fatih dapat hak akses berupa select ke database toko_pulsa.
+```sql
+GRANT SELECT ON toko_pulsa. * TO `fatih`@`localhost` IDENTIFIED BY ‘fatih123’;
+```
+![Screenshot 2025-01-05 193158](https://github.com/user-attachments/assets/38a19440-d698-49b0-b8fe-6158053e2ae5)
 
 
 
