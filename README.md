@@ -204,7 +204,23 @@ WHERE Nama_Pembeli = ‘Rose’;
 ![Screenshot 2025-01-05 194739](https://github.com/user-attachments/assets/821f663b-32fe-47b2-a38f-2ec93abc71ca)
 
 12. Tiga user yang dapat mengakses database (fatih, raziy, fazril)
+```sql
+CREATE USER `raziy`@`localhost`
+IDENTIFIED BY ‘raziy123’;
+```
+![Screenshot 2025-01-03 165512](https://github.com/user-attachments/assets/89ef0bd4-3c8c-45ed-bb4e-9f6ea9a4ce29)
 
+```sql
+CREATE USER `fatih`@`localhost`
+IDENTIFIED BY ‘fatih123’;
+```
+![Screenshot 2025-01-03 165725](https://github.com/user-attachments/assets/a2b5b29d-5470-402c-a27e-4bbe166f098e)
+
+```sql
+CREATE USER `fazril`@`localhost`
+IDENTIFIED BY ‘fazril123’;
+```
+![Screenshot 2025-01-03 165821](https://github.com/user-attachments/assets/6fdd2dcb-b8ea-4c11-b2d5-a6eecbdfd6fa)
 
 
 
